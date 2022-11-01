@@ -5,8 +5,8 @@
 	"main": "server.js",
 	"scripts": {
 		"test": "test",
-		"start-windows-os": "SET NODE_ENV=local&& nodemon server.js",
-    "start-linux-os": "NODE_ENV=local&& nodemon server.js"
+		"start-local": "SET NODE_ENV=local&& nodemon server.js",
+		"start": "NODE_ENV=local && nodemon server.js"
 	},
 	"author": "Geoffrey Parquet",
 	"license": "ISC",
