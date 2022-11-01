@@ -1,0 +1,21 @@
+{
+	"name": "hub-informations.server",
+	"version": "1.0.0",
+	"description": "Test for get information on personal git hub",
+	"main": "server.js",
+	"scripts": {
+		"test": "test",
+		"start-windows-os": "SET NODE_ENV=local&& nodemon server.js",
+    "start-linux-os": "NODE_ENV=local&& nodemon server.js"
+	},
+	"author": "Geoffrey Parquet",
+	"license": "ISC",
+	"dependencies": {
+		"@octokit/core": "^4.1.0",
+		"axios": "^1.1.3",
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.3",
+		"express": "^4.18.2",
+		"nodemon": "^2.0.20"
+	}
+}
