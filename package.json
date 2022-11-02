@@ -1,5 +1,5 @@
 {
-	"name": "hub-informations.server",
+	"name": "hub-information",
 	"version": "1.0.0",
 	"description": "Test for get information on personal git hub",
 	"main": "server.js",
