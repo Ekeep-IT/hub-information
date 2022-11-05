@@ -3,6 +3,8 @@ var express = require('express'),
 	app = express(),
 	axios = require('axios');
 
+const { Octokit } = require('@octokit/core');
+
 require('dotenv').config({ path: `.env.${process.env.NODE_ENV}` });
 
 app.use(express.urlencoded({ extended: true }));
@@ -19,9 +21,9 @@ app.get('/auth', (req, res) => {
 	);
 });
 
-app.get('/callback', (req, res) => {
-	axios
-		.post(
+app.get('/callback', async (req, res) => {
+	try {
+		const response = await axios.post(
 			'https://github.com/login/oauth/access_token',
 			{
 				client_id: clientId,
@@ -33,14 +35,12 @@ app.get('/callback', (req, res) => {
 					Accept: 'application/json',
 				},
 			}
-		)
-		.then((result) => {
-			console.log(JSON.stringify(result.data));
-			res.send('you are authorized ' + result.data.access_token);
-		})
-		.catch((err) => {
-			console.log(err);
-		});
+		);
+		console.log(JSON.stringify(response.data));
+		res.send('you are authorized ' + response.data.access_token);
+	} catch (error) {
+		console.log(err);
+	}
 });
 
 const PORT = process.env.PORT || 3000;
