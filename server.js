@@ -43,6 +43,19 @@ app.get('/callback', async (req, res) => {
 	}
 });
 
+app.get('/api/user/orgs', async (req, res) => {
+	try {
+		const octokit = new Octokit({
+			auth: req.query.token,
+		});
+		const response = await octokit.request('GET /user/orgs', {});
+		res.send(response.data.map((currentData) => ({ id: currentData.id, login: currentData.login })));
+	} catch (error) {
+		console.log(error);
+		res.send(error);
+	}
+});
+
 const PORT = process.env.PORT || 3000;
 module.exports = app.listen(PORT, () => {
 	console.log('Server running on port %d', PORT);
