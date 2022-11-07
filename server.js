@@ -76,6 +76,47 @@ app.post('/api/repos/orgs', async (req, res) => {
 	}
 });
 
+app.post('/api/repos/orgs', async (req, res) => {
+	try {
+		const octokit = new Octokit({
+			auth: req.query.token,
+		});
+
+		const resultOfPromise = await Promise.all(
+			req.body.map(async (organisation) => {
+				const repos = await octokit.request(`GET /orgs/${organisation}/repos`);
+				const { data } = repos;
+				return data.map((item) => ({ name: item.name, fullName: item.full_name }));
+			})
+		);
+
+		const resultFormatted = resultOfPromise.reduce((accumulator, element) => {
+			return element;
+		});
+		res.send(resultFormatted);
+	} catch (error) {
+		console.log(error);
+		res.send(error);
+	}
+});
+
+app.post('/api/pull-request', async (req, res) => {
+	try {
+		const octokit = new Octokit({
+			auth: req.query.token,
+		});
+
+		const resultOfPromise = await Promise.all(
+			req.body.map(async (repo) => {
+				return await octokit.request(`GET /repos/${repo.fullName}/pulls`);
+			})
+		);
+		res.send(resultOfPromise);
+	} catch (error) {
+		console.log(error);
+		res.send(error);
+	}
+});
 
 const PORT = process.env.PORT || 3000;
 module.exports = app.listen(PORT, () => {
