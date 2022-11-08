@@ -1,8 +1,8 @@
+<style>img{width: 10%}</style>
 <div align="center" style="font-size:50px; font-weight:bold;margin-bottom:100px;">
 Hub-Information
 <img src="./images/keepy/keepy-rentree.png" alt="npm run start-local" style="width:40%;"/>
 </div>
-<style> img{width: 10%}</style>
 
 ## À propos du projet
 
