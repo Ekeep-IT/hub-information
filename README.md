@@ -1,6 +1,5 @@
-<style type="text/css">img {width: 10%}</style>
-
-<p align='center' style='font-size:50px; font-weight:bold;margin-bottom:100px;'>Hub-Information<img src='./images/keepy/keepy-rentree.png' alt='npm run start-local' style='width:40%' /></p>
+<p class="title" align="center" > Hub-Information </p>
+<div align="center"><img src='./images/keepy/keepy-rentree.png' alt='npm run start-local' width="20%"/></div>
 
 ## À propos du projet
 
@@ -10,10 +9,10 @@ La finalité de cette dernière, permet de récupérer des informations (organis
 
 ## Technologies utilisées
 
-* [![es6](./images/ES6.jpg)](https://www.w3schools.com/js/js_es6.asp)
-* [![docker](./images/nodejs.png)](https://nodejs.org/en/)
-* [![docker](./images/pnpm.svg)](https://pnpm.io/fr/)
-* [![docker](./images/docker.png)](https://www.docker.com/)
+* <a href='https://www.w3schools.com/js/js_es6.asp'><img src='./images/ES6.jpg' width="10%"/></a>
+* <a href='https://nodejs.org/en/'><img src='./images/nodejs.png' width="10%"/></a>
+* <a href='https://pnpm.io/fr/'><img src='./images/pnpm.svg' width="10%"/></a>
+* <a href='https://www.docker.com/'><img src='./images/docker.png' width="10%"/></a>
 
 ## Pour commencer
 
@@ -71,7 +70,7 @@ Créer une branche à part en local.
 
 Reprendre la route `/callback` pour la rendre plus es6 friendly.
 
-Vous pouvez voir un exemple de resultat en cliquant sur notre ami keepy [![super-keepy](./images/keepy/keepy-superman.png)](https://github.com/Ekeep-IT/hub-information/tree/refactor/user-profile-api-exo1)
+Vous pouvez voir un exemple de resultat en cliquant sur notre ami keepy <a href='https://github.com/Ekeep-IT/hub-information/tree/refactor/user-profile-api-exo1'><img src='./images/keepy/keepy-superman.png' width="10%"/></a>
 
 ### Exercice 2
 
@@ -98,7 +97,7 @@ Le but de cet exercice est de créer une api `/api/user/orgs` permettant de réc
 
 * Le **retour en cas d'erreur**, doit retourner l'erreur de l'api renvoyé par github.
 
-Vous pouvez voir un exemple de resultat en cliquant sur notre ami keepy [![super-keepy](./images/keepy/keepy-superman.png)](https://github.com/Ekeep-IT/hub-information/tree/feat/user-orga-exo2)
+Vous pouvez voir un exemple de resultat en cliquant sur notre ami keepy <a href='https://github.com/Ekeep-IT/hub-information/tree/feat/user-orga-exo2'><img src='./images/keepy/keepy-superman.png' width="10%"/></a>
 
 ### Exercice 3
 
@@ -127,7 +126,7 @@ Le but de cet exercice est de créer une api `/api/repos/orgs` permettant de ré
 
 * Le **retour en cas d'erreur**, doit retourner l'erreur de l'api renvoyé par github.
 
-Vous pouvez voir un exemple de resultat en cliquant sur notre ami keepy [![super-keepy](./images/keepy/keepy-superman.png)](https://github.com/Ekeep-IT/hub-information/tree/feat/repos-orgs-exo3)
+Vous pouvez voir un exemple de resultat en cliquant sur notre ami keepy <a href='https://github.com/Ekeep-IT/hub-information/tree/feat/repos-orgs-exo3'><img src='./images/keepy/keepy-superman.png' width="10%"/></a>
 
 ### Exercice 4
 
@@ -163,4 +162,4 @@ Le but de cet exercice est de créer une api `/api/pull-request` permettant de r
 
 * Le **retour en cas d'erreur**, doit retourner l'erreur de l'api renvoyé par github.
 
-Vous pouvez voir un exemple de resultat en cliquant sur notre ami keepy [![super-keepy](./images/keepy/keepy-superman.png)](https://github.com/Ekeep-IT/hub-information/tree/feat/pull-request-exo4)
+Vous pouvez voir un exemple de resultat en cliquant sur notre ami keepy Vous pouvez voir un exemple de resultat en cliquant sur notre ami keepy <a href='https://github.com/Ekeep-IT/hub-information/tree/feat/pull-request-exo4'><img src='./images/keepy/keepy-superman.png' width="10%"/></a>
