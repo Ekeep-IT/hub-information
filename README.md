@@ -5,9 +5,9 @@
   }
 </style>
 
-<p align="center" style="font-size:50px; font-weight:bold;margin-bottom:100px;">
+<p align='center' style='font-size:50px; font-weight:bold;margin-bottom:100px;'>
   Hub-Information
-  <img src="./images/keepy/keepy-rentree.png" alt="npm run start-local" style="width:40%;" />
+  <img src='./images/keepy/keepy-rentree.png' alt='npm run start-local' style='width:40%;' />
 </p>
 
 ## À propos du projet
