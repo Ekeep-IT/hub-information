@@ -1,10 +1,13 @@
+
 <style>
- img{width: 10%}
+  img {
+    width: 10%
+  }
 </style>
 
 <p align="center" style="font-size:50px; font-weight:bold;margin-bottom:100px;">
-Hub-Information
-<img src="./images/keepy/keepy-rentree.png" alt="npm run start-local" style="width:40%;"/>
+  Hub-Information
+  <img src="./images/keepy/keepy-rentree.png" alt="npm run start-local" style="width:40%;" />
 </p>
 
 ## À propos du projet
